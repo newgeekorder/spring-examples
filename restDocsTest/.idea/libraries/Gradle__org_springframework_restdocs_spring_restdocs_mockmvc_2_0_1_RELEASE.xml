@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.restdocs:spring-restdocs-mockmvc:2.0.1.RELEASE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.restdocs/spring-restdocs-mockmvc/2.0.1.RELEASE/707280ec69ef6698e8d1bea87d24db5cdea16ac8/spring-restdocs-mockmvc-2.0.1.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.restdocs/spring-restdocs-mockmvc/2.0.1.RELEASE/a2d15b9f276d413060ce8ea71742536ad80d03f6/spring-restdocs-mockmvc-2.0.1.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

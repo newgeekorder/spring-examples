@@ -1,0 +1,6 @@
+[source,bash]
+----
+$ http GET 'https://www.waitrose.com/api/search-prod/v3/lookup?product_ids=074749-37922-37923' \
+    'Accept:application/json' \
+    'Content-Type:application/json; charset=UTF-8'
+----

@@ -1,0 +1,19 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 1419
+x-amzn-RequestId: 2e336562-4c8d-11e8-b204-a1f8265c1bda
+Access-Control-Allow-Origin: ${stageVariables.corsorigin}
+x-amz-apigw-id: GKXt8GLtDoEFVDg=
+Build-Version: 3.22.64
+X-Amzn-Trace-Id: sampled=1;root=1-5ae7398c-b9f621ad5139480b81e1de54
+Access-Control-Allow-Credentials: true
+X-Amz-Cf-Id: Z5ua-XqTP40kE6bzqcCJ089dujYcvKh-GtBOko-rsujqIwXL9d9N1A==
+Date: Mon, 30 Apr 2018 15:43:08 GMT
+Connection: keep-alive
+
+
+  {"products":[{"resultType":"GENERAL","id":"074749-37922-37923","lineNumber":"074749","productType":"G","name":"Waitrose reduced sugar strawberry jam","size":"340g","thumbnail":"https://d1ycl3zewbvuig.cloudfront.net/images/products/9/LN_074749_BP_9.jpg","reviews":{"averageRating":4.0769,"reviewCount":13},"currentSaleUnitPrice":{"quantity":{"amount":1,"uom":"C62"},"price":{"amount":0.66,"currencyCode":"GBP"}},"defaultQuantity":{"amount":1,"uom":"C62"},"promotions":[],"productImageUrls":{"small":"https://d1ycl3zewbvuig.cloudfront.net/images/products/9/LN_074749_BP_9.jpg","medium":"https://d1ycl3zewbvuig.cloudfront.net/images/products/3/LN_074749_BP_3.jpg","large":"https://d1ycl3zewbvuig.cloudfront.net/images/products/11/LN_074749_BP_11.jpg","extraLarge":"https://d1ycl3zewbvuig.cloudfront.net/images/products/4/LN_074749_BP_4.jpg"},"persistDefault":false,"displayPrice":"66p","displayPriceEstimated":false,"displayPriceQualifier":"(19.4p/100g)","leadTime":0,"offers":[],"categories":[{"id":"10051","name":"Groceries"},{"id":"300635","name":"Food Cupboard"},{"id":"300637","name":"Jam, Honey & Spreads"},{"id":"300663","name":"Jam"},{"id":"300817","name":"Strawberry Jam"}],"pricePerUnit":"(19.4p per 100g)","maxPersonalisedMessageLength":0,"weights":{"uoms":["C62"],"pricePerUomQualifier":"(19.4p/100g)"},"brandName":"Waitrose Ltd","barCode":"05000169027776."}],"totalMatches":1,"searchTime":1,"totalTime":1}
+
+----

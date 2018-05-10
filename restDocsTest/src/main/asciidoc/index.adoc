@@ -1,0 +1,35 @@
+= Content Search
+
+:doctype: book
+:icons: font
+:toc: left
+:toclevels: 4
+:sectlinks:
+
+= Getting Started With Content Search
+
+This is an example output for a service running at http://localhost:8080/search
+
+== Search
+
+.request
+include::{snippets}/home/http-request.adoc[]
+
+.curl request
+include::{snippets}/home/curl-request.adoc[]
+
+
+.response
+include::{snippets}/home/http-response.adoc[]
+
+As you can see the format is very simple, and in fact you always get the same message.
+
+== BBC
+.request
+This is a request to any website
+include::{generated-snippets}/default-snippets/http-request.adoc[]
+
+.request
+and this might be the response
+include::{generated-snippets}/default-snippets/http-response.adoc[]
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-data-elastic.iml" filepath="$PROJECT_DIR$/spring-data-elastic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-data-elastic_main.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-data-elastic_main.iml" group="spring-data-elastic" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-data-elastic_test.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-data-elastic_test.iml" group="spring-data-elastic" />
+    </modules>
+  </component>
+</project>

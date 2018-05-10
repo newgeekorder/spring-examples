@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.elasticsearch.plugin:reindex-client:5.5.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/ssd/home/richard/.gradle/caches/modules-2/files-2.1/org.elasticsearch.plugin/reindex-client/5.5.0/1b0b3629be30435dafbe0a597b271ecf9972a61b/reindex-client-5.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/ssd/home/richard/.gradle/caches/modules-2/files-2.1/org.elasticsearch.plugin/reindex-client/5.5.0/c03b0b90fe8a4c8b863ba40d9fef98d158b1e897/reindex-client-5.5.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

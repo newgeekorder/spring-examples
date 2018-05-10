@@ -1,0 +1,41 @@
+group 'zipi'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'jsonschema2pojo'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        // this plugin
+        classpath 'org.jsonschema2pojo:jsonschema2pojo-gradle-plugin:latest.integration'
+        // add additional dependencies here if you wish to reference instead of generate them (see example directory)
+    }
+}
+
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'javax.validation:validation-api:1.1.0.CR2'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.1.4'
+
+    // see src/main/resources/json/external_dependencies.json
+    compile 'joda-time:joda-time:2.2'
+}
+
+// Each configuration is set to the default value
+jsonSchema2Pojo {
+    targetPackage = 'example'
+    includeJsr303Annotations = true
+    propertyWordDelimiters = ['_'] as char[]
+}

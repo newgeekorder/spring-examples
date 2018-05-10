@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.restdocs:spring-restdocs-webtestclient:2.0.1.RELEASE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.restdocs/spring-restdocs-webtestclient/2.0.1.RELEASE/d89acb1d1ef3d52c2093e785222fc71334fe222c/spring-restdocs-webtestclient-2.0.1.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.restdocs/spring-restdocs-webtestclient/2.0.1.RELEASE/bb844c70770d13f030b04fd1a97ec28f03b1a301/spring-restdocs-webtestclient-2.0.1.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

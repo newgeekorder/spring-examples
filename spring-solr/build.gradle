@@ -1,0 +1,33 @@
+group 'zipi'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+
+sourceCompatibility = 1.8
+def groovyVersion = '2.4.12'
+
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://repo.spring.io/libs-release'
+    }
+}
+
+dependencies {
+    compile 'org.json:json:20180130'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.springframework.data:spring-data-solr:3.0.6.RELEASE'
+    // solr
+    compile 'org.apache.solr:solr-core:7.3.0'
+    compile 'org.apache.solr:solr-solrj:7.3.0'
+
+    compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+    compile 'com.mashape.unirest:unirest-java:1.4.9'
+
+
+
+}

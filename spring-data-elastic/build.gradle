@@ -1,0 +1,42 @@
+apply plugin: 'java'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+apply plugin: 'idea'
+
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://repo.spring.io/plugins-release'
+    }
+}
+
+def springboot = "2.0.0.M4"
+def jest = "5.3.2"
+def awssigning = "0.0.16"
+def springcloudaws = "1.2.1.RELEASE"
+def springdataes = "3.0.0.RELEASE"
+def elasticsearch = "5.5.0"
+def jackson = "2.9.4"
+
+dependencies {
+    // for the api
+    compile "org.springframework.boot:spring-boot-starter-web:${springboot}"
+
+    compile "org.springframework.boot:spring-boot-dependencies:${springboot}"
+    compile 'com.github.vanroy:spring-boot-starter-data-jest:3.0.0.RELEASE'
+
+
+
+
+//    compile "org.springframework.cloud:spring-cloud-aws-autoconfigure:${springcloudaws}"
+//    compile "org.springframework.data:spring-data-elasticsearch:${springdataes}"
+//    compile "org.elasticsearch:elasticsearch:${elasticsearch}"
+//    compile "io.searchbox:jest:${jest}"
+//    compile "com.fasterxml.jackson.core:jackson-core:${jackson}"
+//    compile "com.fasterxml.jackson.core:jackson-databind:${jackson}"
+    annotationProcessor 'org.apache.commons:commons-lang3:3.6'
+    compile 'org.apache.commons:commons-lang3:3.7'
+}
+

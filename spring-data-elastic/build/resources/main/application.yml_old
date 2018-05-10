@@ -1,0 +1,6 @@
+spring:
+    data:
+        jest:
+            uri: http://localhost:9200
+            # Useful only for AWS request signing ( not required on EC2 instance, it's auto-discovered )
+            aws-region: eu-west-1

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.elasticsearch.plugin:transport-netty3-client:5.5.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/ssd/home/richard/.gradle/caches/modules-2/files-2.1/org.elasticsearch.plugin/transport-netty3-client/5.5.0/55748d88a06d0974f4392d5aba44522b4a3005a7/transport-netty3-client-5.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/ssd/home/richard/.gradle/caches/modules-2/files-2.1/org.elasticsearch.plugin/transport-netty3-client/5.5.0/605995e55c95407fc0a3f1727108949c25d3a851/transport-netty3-client-5.5.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,20 @@
+= 
+
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+
+= Getting Started With Spring REST Docs =
+
+This is an example output for a service running at http://localhost:8080:
+
+.request
+include::{snippets}/home/http-request.adoc[]
+
+.response
+include::{snippets}/home/http-response.adoc[]
+
+As you can see the format is very simple, and in fact you always get the same message.

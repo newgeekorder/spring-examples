@@ -1,0 +1,4 @@
+[source,bash]
+----
+$ curl 'https://www.bbc.co.uk/' -i -X GET
+----

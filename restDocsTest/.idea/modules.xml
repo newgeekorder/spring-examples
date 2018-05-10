@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/restDocsTest.iml" filepath="$PROJECT_DIR$/restDocsTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/restDocsTest_main.iml" filepath="$PROJECT_DIR$/.idea/modules/restDocsTest_main.iml" group="restDocsTest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/restDocsTest_test.iml" filepath="$PROJECT_DIR$/.idea/modules/restDocsTest_test.iml" group="restDocsTest" />
+    </modules>
+  </component>
+</project>

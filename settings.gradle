@@ -6,15 +6,12 @@ include 'spring-data-elastic'
 include 'spring-integration-aws/spring-integration-test-support'
 //include 'spring-integration'
 //include 'spring-cloud-stream-samples'
-include 'spring-cloud-messaging'
+//include 'spring-cloud-messaging'
 include 'spring-cloud-dataflow'
 include 'spring-auto-restdocs'
 include 'sparql-springboot-bootstrap'
 include 'json2pojo'
-
-
-
-
-
-
+include 'restDocsTest'
+include 'webflux'
+include 'springboot-webmagic-crawler'
 
