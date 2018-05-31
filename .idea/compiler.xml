@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="micronaut-core_main" target="1.8" />
+      <module name="micronaut-core_test" target="1.8" />
       <module name="spring-cloud-messaging_main" target="1.8" />
       <module name="spring-cloud-messaging_test" target="1.8" />
     </bytecodeTargetLevel>

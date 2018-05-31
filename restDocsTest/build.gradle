@@ -42,7 +42,7 @@ targetCompatibility = 1.8
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     testCompile("org.springframework.boot:spring-boot-starter-test")
-    compile 'org.springframework.integration:spring-integration-test'
+    compile 'org.springamework.integration:spring-integration-test'
 
     testCompile 'org.springframework:spring-test:5.0.1.RELEASE'
 

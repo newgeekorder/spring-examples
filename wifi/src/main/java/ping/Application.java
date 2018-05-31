@@ -1,28 +1,52 @@
-public class Application {
+package ping;
 
-    @Autowired
-    TimeRepository timeRepository;
+import model.TimeData;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.Scheduled;
 
-    public void ping(){
-        String host = "http://www.bbc.co.uk";
-        int timeOut = 3000;
-        long BeforeTime = System.currentTimeMillis();
-        reachable =  InetAddress.getByName(host).isReachable(timeOut);
-        long AfterTime = System.currentTimeMillis();
-        Long TimeDifference = AfterTime - BeforeTime;
+import java.net.InetAddress;
+import java.net.URL;
+import java.util.Date;
+import java.util.Random;
+
+@SpringBootApplication
+public class Application  implements CommandLineRunner {
+
+//    @Autowired
+    TimeRespository timeRepository;
+
+    @Scheduled(fixedRate = 5000)
+    public void ping() {
+        try {
+            String host = "http://www.bbc.co.uk";
+            int timeOut = 3000;
+            long BeforeTime = System.currentTimeMillis();
+            boolean reachable = InetAddress.getByName(new URL(host).getHost()).isReachable(timeOut);
+            long AfterTime = System.currentTimeMillis();
+            Long timeDifference = AfterTime - BeforeTime;
+            System.out.println("ping " + timeDifference);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 
-    public void loadTestData(){
-        ArrayList data = new ArrayList();
+    public void loadTestData() {
         Random rn = new Random();
-        data.add(new TimeData(new Date(), rn.nextInt(10) + 1))
-        timeRepository.save(getData());
+        TimeData data = new TimeData(new Date(), rn.nextInt(10) + 1);
+        timeRepository.save(data);
     }
 
-public static void main(String [] args ){
-    Application app = new Application();
-    app.ping();
-}
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
 
+    }
+
+    @Override
+    public void run(String... args) throws Exception {
+
+    }
 }

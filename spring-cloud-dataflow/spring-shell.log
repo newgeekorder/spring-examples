@@ -1,0 +1,8 @@
+// dataflow 1.2.0.RELEASE log opened at 2018-05-14 19:42:00
+// [failed] app import --uri http://bit.ly/Bacon-RELEASE-stream-applications-kafka-10-maven' 
+app list
+cls
+app import --uri http://bit.ly/Bacon-RELEASE-stream-applications-rabbit-maven
+app list
+exit
+// dataflow 1.2.0.RELEASE log closed at 2018-05-14 20:13:34

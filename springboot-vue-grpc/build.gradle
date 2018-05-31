@@ -1,0 +1,10 @@
+apply plugin: 'java'
+
+repositories {
+   jcenter()
+   // maven { url "http://oss.jfrog.org/oss-snapshot-local" } //for snashot builds
+
+}
+dependencies {
+    compile('org.lognet:grpc-spring-boot-starter:2.3.2')
+}

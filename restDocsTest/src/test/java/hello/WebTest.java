@@ -45,7 +45,7 @@ public class WebTest {
 
     @Test
     public void authenticaiton(){
-        this.webTestClient.get()
+
     }
 
     @Test
@@ -55,7 +55,6 @@ public class WebTest {
 
     @Test
     public void custSearch(){
-
 
     }
 

@@ -1,0 +1,13 @@
+
+respositories {
+maven {
+        url 'http://dynamodb-local.s3-website-us-west-2.amazonaws.com/release'
+    }
+
+}
+
+dependencies {
+    testCompile group: 'com.amazonaws', name: 'DynamoDBLocal', version: 1.11.0
+
+}
+

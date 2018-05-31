@@ -1,18 +1,90 @@
 version 'unspecified'
 
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.1.RELEASE")
+    }
+}
+
+
 apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'application'
+
+
 
 sourceCompatibility = 1.8
+ext {
+    groovyVersion = '2.4.12'
+}
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
-    compile 'us.codecraft:webmagic-core:0.7.3'
-    compile 'us.codecraft:webmagic-extension:0.7.3'
+//    compile 'org.slf4j:slf4j-api:1.7.5'
+    compile ('us.codecraft:webmagic-core:0.7.3' )
+            {
+                exclude group:'org.slf4j', module: 'slf4j-log4j12'
+            }
+    compile ('us.codecraft:webmagic-extension:0.7.3')
+
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile 'org.jsoup:jsoup:1.11.3'
-    compile 'com.github.fcannizzaro:jsoup-annotations:1.0.3'
+
+
+    compile("org.springframework.boot:spring-boot-starter-jdbc") {
+        exclude module: "spring-boot-starter-logging"
+        exclude module: "logback-classic"
+    }
+
+    compile("org.springframework.boot:spring-boot-devtools") {
+        exclude module: "spring-boot-starter-logging"
+        exclude module: "logback-classic"
+    }
+    compile("org.springframework.boot:spring-boot-starter-data-jpa") {
+        exclude module: "spring-boot-starter-logging"
+        exclude module: "logback-classic"
+    }
+    compile 'com.h2database:h2:1.4.197'
+
+
+    compile 'org.apache.solr:solr-core:7.3.0'
+
+    compile 'org.springframework.data:spring-data-solr:3.0.6.RELEASE'
+    compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+    compile 'com.mashape.unirest:unirest-java:1.4.9'
+
+
 
 }
+
+
+jar {
+    baseName = 'wtr-etl-crawler'
+    version =  '0.1.0'
+    // Keep jar clean:
+    exclude 'META-INF/*.SF', 'META-INF/*.DSA', 'META-INF/*.RSA', 'META-INF/*.MF'
+
+    manifest {
+        attributes 'Main-Class': 'com.waitrose.ecomm.services.Application',
+                'Class-Path': configurations.runtime.files.collect { "lib/$it.name" }.join(' ')
+    }
+
+    // How-to add class path:
+    //     https://stackoverflow.com/questions/22659463/add-classpath-in-manifest-using-gradle
+    //     https://gist.github.com/simon04/6865179
+}
+
+
+mainClassName = 'zipi.WaitroseRecipe'
+
+
